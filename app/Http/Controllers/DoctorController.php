@@ -115,7 +115,6 @@ class DoctorController extends Controller
             'user_id' => $user->id,
             'image' => $doctorImage,
             'specialization' => $request->specialization,
-            'contact_number' => $request->contact,
         ]);
 
         return redirect()->route('index.view')->with('success', 'Doctor registered successfully.');
